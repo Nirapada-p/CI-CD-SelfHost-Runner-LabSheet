@@ -1056,14 +1056,9 @@ docker ps
 docker logs nodejs-selfhosted-app
 ```
 
-**ผลลัพธ์ที่ควรได้:**
-```json
-{
-  "message": "🎉 Updated! Pull-based Runner Works!",
-  "version": "1.0.2",
-  "architecture": "Pull-based (Polling)",
-  "security": "No inbound ports required"
-}
+### บันทึกผลการรันคำสั่ง docker logs nodejs-selfhosted-app
+```txt
+บันทึกรูปผลการรันคำสั่ง
 ```
 
 ### ส่วนที่ 8: Monitoring และ Troubleshooting 
@@ -1146,6 +1141,10 @@ chmod +x monitor.sh
 # Run continuously (every 10 seconds)
 watch -n 10 ./monitor.sh
 ```
+### บันทึกผลการรัน monitor.sh
+```txt
+บันทึกรูปผลการรันคำสั่ง
+```
 
 ## สรุปจุดสำคัญ
 
@@ -1188,7 +1187,9 @@ watch -n 10 ./monitor.sh
 
 <details>
 <summary>คำตอบ</summary>
-
+```txt
+ เขียนคำตอบลงในช่องนี้
+```
 
 </details>
 
@@ -1196,7 +1197,9 @@ watch -n 10 ./monitor.sh
 
 <details>
 <summary>คำตอบ</summary>
-
+```txt
+ เขียนคำตอบลงในช่องนี้
+```
 
 </details>
 
@@ -1204,7 +1207,9 @@ watch -n 10 ./monitor.sh
 
 <details>
 <summary>คำตอบ</summary>
-
+```txt
+ เขียนคำตอบลงในช่องนี้
+```
 
 </details>
 
@@ -1212,7 +1217,9 @@ watch -n 10 ./monitor.sh
 
 <details>
 <summary>คำตอบ</summary>
-
+```txt
+ เขียนคำตอบลงในช่องนี้
+```
 
 </details>
 
