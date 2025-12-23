@@ -1146,6 +1146,8 @@ chmod +x monitor.sh
 watch -n 10 ./monitor.sh
 ```
 ### บันทึกผลการรัน monitor.sh
+<img width="593" height="420" alt="image" src="https://github.com/user-attachments/assets/020c2a73-6e63-4d36-a0d7-6f8131216845" />
+
 ```txt
 บันทึกรูปผลการรันคำสั่ง
 ```
@@ -1192,8 +1194,10 @@ watch -n 10 ./monitor.sh
 <details>
 <summary>คำตอบ</summary>
 
- เขียนคำตอบลงในช่องนี้
-
+คือ Runner เป็นฝ่ายดึงงานเองจาก GitHub แทนที่จะรอให้ GitHub ส่งงานมา
+ข้อดี 1.ควบคุมการทำงานได้ดี Runner ดึงงานเองตามเวลาที่ตั้งค่าได้
+    2.ลดปัญหาการ overload ของ server
+    3.ความยืดหยุ่นสูง ใช้ Runner แบบ offline แล้วดึงงานเมื่อพร้อม
 
 </details>
 
@@ -1202,7 +1206,7 @@ watch -n 10 ./monitor.sh
 <details>
 <summary>คำตอบ</summary>
 
- เขียนคำตอบลงในช่องนี้
+เพราะเครื่องดึงงานเอง ไม่เปิดช่องให้ภายนอกเข้ามา
 
 
 </details>
@@ -1212,7 +1216,7 @@ watch -n 10 ./monitor.sh
 <details>
 <summary>คำตอบ</summary>
 
- เขียนคำตอบลงในช่องนี้
+ใช้ npm ci ใน production เพื่อให้การติดตั้ง package เหมือนเดิมทุกครั้งและปลอดภัยกว่า
 
 
 </details>
@@ -1222,7 +1226,7 @@ watch -n 10 ./monitor.sh
 <details>
 <summary>คำตอบ</summary>
 
- เขียนคำตอบลงในช่องนี้
+ Self-Hosted Runner ควรใช้กับ Private Repository เท่านั้น เพื่อป้องกันคนภายนอกรัน code บนเครื่องเรา
 
 
 </details>
@@ -1232,7 +1236,7 @@ watch -n 10 ./monitor.sh
 <details>
 <summary>คำตอบ</summary>
 
- เขียนคำตอบลงในช่องนี้
+Nginx + Reverse Proxy = ตัวกลางรับ traffic, ปลอดภัย, เร็ว และจัดการ backend ได้ง่าย
 
 
 </details>
